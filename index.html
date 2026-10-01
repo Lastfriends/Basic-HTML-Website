@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="basic HTML website, IT, Web Development.">
     <title>Frontend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,78 +20,104 @@
         <h1>Maali Alqudaihi</h1>
          <!-- <a href="#" class="logo">Maali Alqudaihi<span>.</span></a> -->
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="articles.html">Articles</a>
-            <a href="contact.html">Contact</a>
+            <a class="home-link" href="index.html">Home</a>
+            <a class="projects-link" href="projects.html">Projects</a>
+            <a class="articles-link" href="articles.html">Articles</a>
+            <a class="contact-link" href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <div class="middle">
+        <h1>Frontend Developer</h1>
+    </div>
 
-        <section class="content">
-            <h2>Frontend Developer</h2>
-        </section>
+        <!--Resume Grid-->
+        <section class="resume-grid">
+          
+        <!-- projects -->
+        <div class="column projects">
+            <h2 class="heading">Projects</h2>
+          <a href="#portfolio">HTML only Portfolio</a>
+          <a href="#calculator">Calculator</a>
+          <a href="#quizapp">Quiz App</a>
+          <a class="countdown" href="#countdown">Countdown Timer</a>
+          <a href="#upcoming">Product Upcoming Page</a>
+      </div>
+      
+        <!-- Work Experience -->
+    <div class="column work">
 
-        <!-- experience -->
-    <section class="experience">
-        <h1>Work Experience</h1>
-        <div> 
+        <h2 class="heading">Work Experience</h2>  
+
+        <div class="experience"> 
             <h3>Roadmap.sh</h3>
-            <span>Solved all the frontend projects</span><br>
+            <p>Solved all the frontend projects</p><br>
             <a href="url">Visit my profile</a>
          </div>  
-         <div>
+         
+        <div class="experience"> 
             <h3>OpenSource Work</h3>
-            <span>Contributed to 50 opensource projects. Made
+            <p>Contributed to 50 opensource projects. Made
                 my own projects with 200 GitHub Stars.
-            </span><br>
+            </p><br>
             <a href="url">Visit my Github profile</a>
          </div>  
-    </section>
+    </div>
+        
 
     <!-- Education -->
 
-    <section class="education">
-        <h1>Education</h1>
-        <span>Bachelor degree in IT from Indaina State University. 
-            Plus I have a minor in Managment Information System.</span>   
+    <div class="column education">
+
+        <h2 class="heading">Education</span></h2>
+
+        <p>Bachelor degree in IT from Indaina State University. 
+            Plus I have a minor in Managment Information System.
+        </p>
+
+        <h3>Courses I took:</h3>
+
+        <ul>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures And Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discrete Mathematics</li>
+        </ul>
+    </div>       
+
     </section>
 
     <!-- Reviews -->
      <section class="review" id="review">
-
-    <h1>Reviews from Teachers</h1>
+     <h1 class="heading">Reviews <span> From Teachers</span></h1>
 
     <div class="box-container">
 
         <div class="box">
-
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit eros eget urna mattis, eget hendrerit sapien feugiat. Integer non ex ex. 
                 Mauris maximus augue sed nunc rhoncus, sollicitudin facilisis ex mattis.</p>  
-        </div>
-
         <div class="teacher">
             <h4>Jane Doe</h4>
             <h4>Assistant Teacher</h4>
         </div>
+       </div>
 
          <div class="box">
-
-           
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit eros eget urna mattis, eget hendrerit sapien feugiat. Integer non ex ex. 
-                Mauris maximus augue sed nunc rhoncus, sollicitudin facilisis ex mattis.</p>
-        
-                </div>
-
+                Mauris maximus augue sed nunc rhoncus, sollicitudin facilisis ex mattis.</p>   
         <div class="teacher">
             <h4>Jane Doe</h4>
             <h4>Assistant Teacher</h4>
         </div>
-    
+       </div>
             
 
          <div class="box">
-
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit eros eget urna mattis, eget hendrerit sapien feugiat. Integer non ex ex. 
                 Mauris maximus augue sed nunc rhoncus, sollicitudin facilisis ex mattis.</p>
         <div class="teacher">
@@ -103,8 +137,9 @@
         
         <div class="credit"> 
             
-        created by <span>Maali Alqudaihi </span> | all rights reserved 2026.
+        Created by <span>Maali Alqudaihi </span> | all rights reserved 2026.
 
+        </div>
     </section>
     
 </body>
